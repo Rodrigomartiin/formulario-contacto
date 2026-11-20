@@ -15,7 +15,7 @@
   var telOk = function (v) { var d = String(v).replace(/[\s\-().]/g, ""); return /^(\+34|0034)?[6789]\d{8}$/.test(d) || /^(\+|00)\d{8,15}$/.test(d); };
   var nombreOk = function (v) { return /^[\p{L}][\p{L}\s'.\-]{1,79}$/u.test(v); };
   var check = '<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg>';
-  var consentTxt = 'He leído la <a href="../privacidad/" target="_blank" rel="noopener">política de privacidad</a> y acepto que uses mis datos, incluido el motivo de consulta, solo para contactarme.';
+  var consentTxt = 'He leído la <a href="#" data-privacidad>política de privacidad</a> y acepto que uses mis datos, incluido el motivo de consulta, solo para contactarme.';
   // Campo trampa: invisible para personas, los bots lo rellenan. Nombre realista a propósito.
   var trampa = function (p) { return '<div class="hp" aria-hidden="true"><label for="' + p + '-empresa">Empresa</label><input type="text" id="' + p + '-empresa" name="empresa" tabindex="-1" autocomplete="off"></div>'; };
   var toTop = function (s) { s.scrollTop = 0; if (s.getBoundingClientRect().top < 0) window.scrollTo(0, 0); };
@@ -211,7 +211,7 @@
     });
   }
   document.addEventListener("click", function (e) {
-    var t = e.target.closest ? e.target.closest("[data-restart]") : null;
+    var t = e.target.closest ? e.target.closest("[data-restart],[data-privacidad]") : null;
     if (!t) return;
     e.preventDefault();
     if (t.hasAttribute("data-restart")) start();

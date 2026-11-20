@@ -4,7 +4,7 @@
 // la página funciona en modo demo y NO envía datos a ningún sitio.
 (function () {
   "use strict";
-  var CONFIG = { endpoint: "", timeoutMs: 15000 };
+  var CONFIG = { endpoint: "https://script.google.com/macros/s/AKfycbwTSi_KwHtXq_BNBZB9WvO6uiqFfBGk_PU8xTudsQ2hUZm2XupxdoOlwutSZbZFsU1z/exec", timeoutMs: 15000 };
 
   var MOTIVOS = ["Mejora de rendimiento", "Preparación para un evento específico", "Pérdida de masa grasa", "Aumento de masa muscular", "Ajuste de peso para categoría", "Gestión de molestias digestivas", "Otro / No estoy seguro"];
   var ORIGEN = ["Instagram", "Recomendación de un amigo", "Publicidad", "Otro"];

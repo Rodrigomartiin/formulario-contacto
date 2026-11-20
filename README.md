@@ -9,7 +9,7 @@ Tres propuestas de diseño para un formulario de contacto de nutrición deportiv
 La portada (`index.html`) muestra los tres a la vez para compararlos.
 
 ## Estado
-Son demos: comprueban los campos y enseñan la pantalla final, pero **no envían datos** mientras `CONFIG.endpoint` esté vacío en `formulario.js`.
+A y B están **conectados**: cada envío se guarda en la hoja de Google Sheets y llega por email. El C es solo una demo y no envía nada.
 
 ## Seguridad (A y B)
 - HTTPS obligatorio (GitHub Pages con «Enforce HTTPS» y HSTS).

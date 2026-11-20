@@ -1,0 +1,141 @@
+/* Estilos compartidos de los tres diseños (A, B y C) */
+*{box-sizing:border-box}
+html,body{margin:0}
+body{font-family:"Manrope","Segoe UI",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+[hidden]{display:none!important}
+.app{max-width:480px;margin:0 auto;min-height:100vh;min-height:100dvh;display:flex;flex-direction:column}
+.screen{flex:1;display:flex;flex-direction:column}
+.screen>.mk{flex:1}
+.demo-bar{font:500 12px "Manrope",system-ui,sans-serif;text-align:center;padding:12px 16px 18px;display:flex;flex-direction:column;gap:4px}
+.demo-bar a{font-weight:700}
+@media (min-width:560px){
+  body{padding:32px 16px}
+  .app{min-height:auto;border-radius:24px;overflow:hidden;box-shadow:0 24px 60px -30px rgba(0,0,0,.35)}
+}
+:focus-visible{outline:3px solid currentColor;outline-offset:2px}
+
+/* ---------- Común ---------- */
+.mk{font-family:"Manrope","Segoe UI",system-ui,sans-serif;font-size:14px;line-height:1.45}
+.mk h4{margin:0}
+.mk p{margin:0}
+.mk fieldset{border:0;margin:0;padding:0;min-width:0}
+.mk input[type=text],.mk input[type=tel]{width:100%;font:inherit;font-size:16px;border-radius:10px;padding:11px 12px;outline:none}
+.mk .err{font-size:12px;font-weight:600}
+.mk .err:not(:empty){margin-top:6px}
+.mk .chips{display:flex;flex-wrap:wrap;gap:8px}
+.mk .chip{position:relative;cursor:pointer}
+.mk .chip input{position:absolute;opacity:0;inset:0;cursor:pointer;margin:0}
+.mk .chip span{display:block;padding:8px 12px;border-radius:999px;font-weight:600;font-size:13px;transition:background .15s,color .15s,border-color .15s}
+.mk .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.mk .consent{display:grid;grid-template-columns:20px 1fr;gap:10px;align-items:start;font-size:12.5px;cursor:pointer}
+.mk .consent input{width:18px;height:18px;margin:1px 0 0}
+.mk .done{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:12px;flex:1;min-height:520px;padding:28px}
+.mk .tick{width:64px;height:64px;border-radius:50%;display:grid;place-items:center}
+.mk .new{font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:2px 6px;border-radius:4px;margin-left:6px;vertical-align:2px}
+.mk .other-in{margin-top:8px}
+.mk{display:flex;flex-direction:column}
+
+/* ---------- A · Consulta clara ---------- */
+body.a{background:#E9EFEA}
+body.a .app,.va{background:#FBFCFA;color:#1D2A23}
+body.a .demo-bar{color:#5E7066}
+body.a .demo-bar a{color:#2F6B52}
+.va .top{padding:26px 20px 20px;background:#E5EFE8;display:flex;flex-direction:column;gap:10px}
+.va .brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:13px}
+.va .logo{width:34px;height:34px;border-radius:50%;background:#2F6B52;color:#fff;display:grid;place-items:center;font-size:12px;font-weight:700}
+.va h4{font-family:"Bricolage Grotesque","Segoe UI",sans-serif;font-size:26px;line-height:1.15;margin-top:4px;font-weight:700}
+.va .top p{color:#4A5D52;font-size:13.5px}
+.va form{padding:20px 20px 26px;display:flex;flex-direction:column;gap:20px}
+.va label.lb,.va legend{font-weight:700;font-size:13px;margin-bottom:6px;display:block;padding:0}
+.va input[type=text],.va input[type=tel]{border:1.5px solid #CCD8D0;background:#fff;color:#1D2A23}
+.va input[type=text]:focus,.va input[type=tel]:focus{border-color:#2F6B52;box-shadow:0 0 0 3px #2F6B5226}
+.va .telrow{display:flex;gap:8px}
+.va .pre{flex:0 0 auto;border:1.5px solid #CCD8D0;border-radius:10px;padding:11px 10px;background:#F1F5F2;font-weight:600;font-size:16px}
+.va .chip span{border:1.5px solid #CCD8D0;background:#fff;color:#2C3D33}
+.va .chip input:checked+span{background:#2F6B52;border-color:#2F6B52;color:#fff}
+.va .chip input:focus-visible+span{outline:3px solid #2F6B5266}
+.va .err{color:#B03A2A}
+.va .new{background:#FFE7B8;color:#7A4B00}
+.va .note{font-size:11.5px;color:#5E7066;margin-top:6px}
+.va .btn{font:700 15px "Manrope",system-ui,sans-serif;background:#2F6B52;color:#fff;border:0;border-radius:12px;padding:15px;cursor:pointer}
+.va .btn:hover{background:#255842}
+.va .fine{font-size:11.5px;color:#5E7066;text-align:center}
+.va .consent a{color:#2F6B52}
+.va .done h4{font-size:24px}
+.va .tick{background:#E5EFE8;color:#2F6B52}
+
+/* ---------- B · Paso a paso ---------- */
+body.b{background:#E3E8F4}
+body.b .app,.vb{background:#F4F6FB;color:#141B2D}
+body.b .demo-bar{color:#5A6482}
+body.b .demo-bar a{color:#2350C8}
+.vb .bar{position:sticky;top:0;z-index:2;background:#F4F6FB;padding:20px 20px 12px;display:flex;flex-direction:column;gap:10px}
+.vb .brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:13px}
+.vb .logo{width:30px;height:30px;border-radius:9px;background:#2350C8;color:#fff;display:grid;place-items:center;font-size:11px;font-weight:700}
+.vb .barrow{display:flex;justify-content:space-between;align-items:center;font-size:12px;font-weight:700;color:#5A6482}
+.vb .back{background:none;border:0;font:700 12px "Manrope",system-ui,sans-serif;color:#2350C8;cursor:pointer;padding:4px 0}
+.vb .back[disabled]{visibility:hidden}
+.vb .track{height:6px;border-radius:99px;background:#DDE3F1;overflow:hidden}
+.vb .fill{height:100%;background:#2350C8;border-radius:99px;transition:width .35s ease}
+.vb .steps{flex:1;padding:10px 20px 24px;display:flex;flex-direction:column}
+.vb .step{display:flex;flex-direction:column;gap:14px;animation:bin .3s ease;flex:1}
+@keyframes bin{from{opacity:.2;transform:translateX(14px)}to{opacity:1;transform:none}}
+.vb h4{font-family:"Bricolage Grotesque","Segoe UI",sans-serif;font-size:26px;line-height:1.15;font-weight:700}
+.vb .hint{color:#5A6482;font-size:13px}
+.vb .cards{display:flex;flex-direction:column;gap:8px}
+.vb .card{display:flex;align-items:center;gap:12px;width:100%;text-align:left;font:600 14px "Manrope",system-ui,sans-serif;color:#141B2D;background:#fff;border:1.5px solid #DDE3F1;border-radius:14px;padding:13px 14px;cursor:pointer;transition:border-color .15s,transform .1s}
+.vb .card:hover{border-color:#2350C8}
+.vb .card:active{transform:scale(.98)}
+.vb .card[aria-pressed="true"]{border-color:#2350C8;background:#EAF0FF}
+.vb .ico{flex:0 0 30px;height:30px;border-radius:9px;background:#EAF0FF;color:#2350C8;display:grid;place-items:center}
+.vb .card[aria-pressed="true"] .ico{background:#2350C8;color:#fff}
+.vb input[type=text],.vb input[type=tel]{border:1.5px solid #DDE3F1;background:#fff;color:#141B2D;font-size:17px;padding:14px}
+.vb input:focus{border-color:#2350C8;box-shadow:0 0 0 3px #2350C826}
+.vb .err{color:#C0392B}
+.vb .btn{font:700 15px "Manrope",system-ui,sans-serif;background:#2350C8;color:#fff;border:0;border-radius:14px;padding:15px;cursor:pointer;width:100%}
+.vb .btn:hover{background:#1B41A6}
+.vb .seg{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.vb .sum{background:#fff;border:1.5px solid #DDE3F1;border-radius:14px;padding:12px 14px;display:grid;grid-template-columns:auto 1fr;gap:4px 12px;font-size:13px;margin:0}
+.vb .sum dt{color:#5A6482}
+.vb .sum dd{margin:0;font-weight:600;overflow-wrap:anywhere}
+.vb .consent a{color:#2350C8}
+.vb .tick{background:#EAF0FF;color:#2350C8}
+
+/* ---------- C · Pista ---------- */
+body.c{background:#1A1A1A}
+body.c .app,.vc{background:#FFFFFF;color:#111}
+body.c .demo-bar{color:#666}
+body.c .demo-bar a{color:#111}
+.vc .hero{background:#111;color:#fff;padding:26px 20px 22px;position:relative;overflow:hidden}
+.vc .hero::after{content:"";position:absolute;right:-30px;top:0;bottom:0;width:150px;background:repeating-linear-gradient(90deg,transparent 0 22px,#FFD12E 22px 26px);transform:skewX(-18deg);opacity:.9}
+.vc .kick{font:800 12px "Barlow Condensed","Arial Narrow",sans-serif;letter-spacing:.18em;color:#FFD12E;text-transform:uppercase;position:relative;z-index:1}
+.vc h4{font:800 40px/0.95 "Barlow Condensed","Arial Narrow",sans-serif;text-transform:uppercase;margin:8px 0 10px;position:relative;z-index:1;max-width:240px}
+.vc .hero p{font-size:13px;color:#CFCFCF;position:relative;z-index:1;max-width:220px}
+.vc form{padding:22px 20px;display:flex;flex-direction:column;gap:24px}
+.vc .blk{display:grid;grid-template-columns:34px 1fr;gap:4px 10px}
+.vc .blk>div{min-width:0}
+.vc .num{font:800 22px/1 "Barlow Condensed","Arial Narrow",sans-serif;color:#111;background:#FFD12E;height:30px;display:grid;place-items:center;border-radius:4px}
+.vc label.lb,.vc legend{font:800 18px/1.1 "Barlow Condensed","Arial Narrow",sans-serif;text-transform:uppercase;letter-spacing:.03em;padding:0;margin-bottom:8px;display:block}
+.vc input[type=text],.vc input[type=tel]{border:0;border-bottom:2.5px solid #111;border-radius:0;background:#F5F5F2;color:#111}
+.vc input:focus{background:#FFF8DA}
+.vc .telrow{display:flex;gap:8px}
+.vc .pre{flex:0 0 auto;border-bottom:2.5px solid #111;padding:11px 10px;background:#EDEDE8;font-weight:700;font-size:16px}
+.vc .rows{display:flex;flex-direction:column;flex-wrap:nowrap;gap:0}
+.vc .rows .chip span{border-radius:0;border-bottom:1px solid #E2E2DC;padding:11px 4px;font-size:14px;display:flex;justify-content:space-between;gap:10px;color:#111}
+.vc .rows .chip span::after{content:"";width:16px;height:16px;border:2px solid #111;border-radius:3px;flex:0 0 auto}
+.vc .rows .chip input:checked+span{background:#FFF3BF}
+.vc .rows .chip input:checked+span::after{background:#111;box-shadow:inset 0 0 0 3px #FFF3BF}
+.vc .rows .chip input:focus-visible+span{outline:2px solid #111}
+.vc .chips:not(.rows) .chip span{border:2px solid #111;border-radius:4px;color:#111;background:#fff}
+.vc .chips:not(.rows) .chip input:checked+span{background:#111;color:#FFD12E}
+.vc .err{color:#C62F1D}
+.vc .new{background:#111;color:#FFD12E}
+.vc .note{font-size:11.5px;color:#666;margin-top:6px}
+.vc .btn{font:800 22px "Barlow Condensed","Arial Narrow",sans-serif;letter-spacing:.06em;text-transform:uppercase;background:#FFD12E;color:#111;border:0;border-radius:4px;padding:14px;cursor:pointer;box-shadow:4px 4px 0 #111}
+.vc .btn:active{transform:translate(2px,2px);box-shadow:2px 2px 0 #111}
+.vc .fine{font-size:11.5px;color:#666;text-align:center}
+.vc .consent a{color:#111}
+.vc .done h4{color:#111;max-width:none}
+.vc .tick{background:#FFD12E;color:#111;border-radius:6px}
+
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}

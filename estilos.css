@@ -101,41 +101,10 @@ body.b .demo-bar a{color:#2350C8}
 .vb .consent a{color:#2350C8}
 .vb .tick{background:#EAF0FF;color:#2350C8}
 
-/* ---------- C · Pista ---------- */
-body.c{background:#1A1A1A}
-body.c .app,.vc{background:#FFFFFF;color:#111}
-body.c .demo-bar{color:#666}
-body.c .demo-bar a{color:#111}
-.vc .hero{background:#111;color:#fff;padding:26px 20px 22px;position:relative;overflow:hidden}
-.vc .hero::after{content:"";position:absolute;right:-30px;top:0;bottom:0;width:150px;background:repeating-linear-gradient(90deg,transparent 0 22px,#FFD12E 22px 26px);transform:skewX(-18deg);opacity:.9}
-.vc .kick{font:800 12px "Barlow Condensed","Arial Narrow",sans-serif;letter-spacing:.18em;color:#FFD12E;text-transform:uppercase;position:relative;z-index:1}
-.vc h4{font:800 40px/0.95 "Barlow Condensed","Arial Narrow",sans-serif;text-transform:uppercase;margin:8px 0 10px;position:relative;z-index:1;max-width:240px}
-.vc .hero p{font-size:13px;color:#CFCFCF;position:relative;z-index:1;max-width:220px}
-.vc form{padding:22px 20px;display:flex;flex-direction:column;gap:24px}
-.vc .blk{display:grid;grid-template-columns:34px 1fr;gap:4px 10px}
-.vc .blk>div{min-width:0}
-.vc .num{font:800 22px/1 "Barlow Condensed","Arial Narrow",sans-serif;color:#111;background:#FFD12E;height:30px;display:grid;place-items:center;border-radius:4px}
-.vc label.lb,.vc legend{font:800 18px/1.1 "Barlow Condensed","Arial Narrow",sans-serif;text-transform:uppercase;letter-spacing:.03em;padding:0;margin-bottom:8px;display:block}
-.vc input[type=text],.vc input[type=tel]{border:0;border-bottom:2.5px solid #111;border-radius:0;background:#F5F5F2;color:#111}
-.vc input:focus{background:#FFF8DA}
-.vc .telrow{display:flex;gap:8px}
-.vc .pre{flex:0 0 auto;border-bottom:2.5px solid #111;padding:11px 10px;background:#EDEDE8;font-weight:700;font-size:16px}
-.vc .rows{display:flex;flex-direction:column;flex-wrap:nowrap;gap:0}
-.vc .rows .chip span{border-radius:0;border-bottom:1px solid #E2E2DC;padding:11px 4px;font-size:14px;display:flex;justify-content:space-between;gap:10px;color:#111}
-.vc .rows .chip span::after{content:"";width:16px;height:16px;border:2px solid #111;border-radius:3px;flex:0 0 auto}
-.vc .rows .chip input:checked+span{background:#FFF3BF}
-.vc .rows .chip input:checked+span::after{background:#111;box-shadow:inset 0 0 0 3px #FFF3BF}
-.vc .rows .chip input:focus-visible+span{outline:2px solid #111}
-.vc .chips:not(.rows) .chip span{border:2px solid #111;border-radius:4px;color:#111;background:#fff}
-.vc .chips:not(.rows) .chip input:checked+span{background:#111;color:#FFD12E}
-.vc .err{color:#C62F1D}
-.vc .new{background:#111;color:#FFD12E}
-.vc .note{font-size:11.5px;color:#666;margin-top:6px}
-.vc .btn{font:800 22px "Barlow Condensed","Arial Narrow",sans-serif;letter-spacing:.06em;text-transform:uppercase;background:#FFD12E;color:#111;border:0;border-radius:4px;padding:14px;cursor:pointer;box-shadow:4px 4px 0 #111}
-.vc .btn:active{transform:translate(2px,2px);box-shadow:2px 2px 0 #111}
-.vc .fine{font-size:11.5px;color:#666;text-align:center}
-.vc .consent a{color:#111}
-.vc .done h4{color:#111;max-width:none}
-.vc .tick{background:#FFD12E;color:#111;border-radius:6px}
-
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+/* ---------- Añadidos A y B ---------- */
+.mk .mt{margin-top:14px}
+.mk .estado:not(:empty){text-align:center;margin-top:0}
+.mk .btn:disabled{opacity:.65;cursor:progress}
+.noscript{padding:16px;text-align:center}

@@ -20,7 +20,7 @@
     const wrapF = (n, inner) => c ? '<div class="blk"><span class="num">' + n + '</span><div>' + inner + '</div></div>' : '<div>' + inner + '</div>';
     const head = c
       ? '<div class="hero"><div class="kick">Nutrición deportiva</div><h4>Vamos a por tu objetivo</h4><p>4 preguntas. Te contesto en 24-48 h.</p></div>'
-      : '<div class="top"><div class="brand"><span class="logo">ND</span>Nutrición deportiva</div><h4>Cuéntame tu objetivo</h4><p>Son 4 preguntas. Te contesto en 24-48 h por WhatsApp o llamada.</p></div>';
+      : '<div class="top"><div class="brand"><span class="logo">ND</span>Nutrición deportiva</div><h4>Cuéntame tu objetivo</h4></div>';
     return '<div class="mk v' + p + '">' + head +
       '<form id="' + p + '-form" novalidate>' +
       wrapF("01", '<label class="lb" for="' + p + '-nombre">Nombre completo</label><input type="text" id="' + p + '-nombre" autocomplete="name" placeholder="Nombre y apellidos"><div class="err" id="' + p + '-e-nombre"></div>') +
